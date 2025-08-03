@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staff Registration - Bright Minds Academy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header (same as index.html) -->
+    <header>
+        <div class="container header-container">
+            <!-- Logo same as index.html -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Auth buttons same as index.html -->
+        </div>
+    </header>
+
+    <!-- Staff Registration Form -->
+    <section class="section">
+        <div class="auth-container">
+            <div class="auth-header">
+                <h2>Staff Registration</h2>
+                <p>Create your staff account to access administrative tools</p>
+            </div>
+            <div class="auth-tabs">
+                <a href="staff-login.html" class="auth-tab">Login</a>
+                <div class="auth-tab active">Register</div>
+            </div>
+            
+            <div class="auth-form active">
+                <form id="staffRegisterForm">
+                    <div class="form-group">
+                        <label for="staff-fullname">Full Name</label>
+                        <input type="text" id="staff-fullname" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="staff-reg-email">Email Address</label>
+                        <input type="email" id="staff-reg-email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="staff-reg-password">Password</label>
+                        <input type="password" id="staff-reg-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="staff-confirm-password">Confirm Password</label>
+                        <input type="password" id="staff-confirm-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="staff-department">Department</label>
+                        <select id="staff-department" required>
+                            <option value="">Select department</option>
+                            <option value="academic">Academic</option>
+                            <option value="administration">Administration</option>
+                            <option value="faculty">Faculty</option>
+                            <option value="support">Support Staff</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="staff-position">Position</label>
+                        <input type="text" id="staff-position" required>
+                    </div>
+                    <button type="submit" class="btn btn-success">Create Account</button>
+                </form>
+                <div class="form-footer">
+                    <p>Already have an account? <a href="staff-login.html">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer (same as index.html) -->
+    <script src="js/script.js"></script>
+</body>
+</html>
